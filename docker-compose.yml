@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/var/www/html
     ports:
-      - 80 # Проброс только внутреннего порта контейнера
+      - 80
     networks:
       - dokploy-network
 
