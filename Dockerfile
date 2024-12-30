@@ -4,7 +4,7 @@ COPY php.ini /usr/local/etc/php/
 
 WORKDIR /var/www/html
 
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN echo "ServerName php-test-czjcvn-eab325-45-12-135-58.traefik.me" >> /etc/apache2/apache2.conf
 
 RUN mkdir -p /var/www/html/public \
     && chown -R www-data:www-data /var/www/html \
