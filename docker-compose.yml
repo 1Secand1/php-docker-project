@@ -7,10 +7,10 @@ services:
     volumes:
       - .:/var/www/html
     ports:
-      - 80
+      - 80:80
+    restart: unless-stopped
     networks:
-      - dokploy-network
-
+      - custom-app-network
 networks:
-  dokploy-network:
-    external: true
+  custom-app-network:
+    driver: bridge
